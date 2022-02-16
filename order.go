@@ -296,6 +296,7 @@ type LineItem struct {
 	Grams                      int                    `json:"grams,omitempty"`
 	FulfillmentStatus          orderFulfillmentStatus `json:"fulfillment_status,omitempty"`
 	TaxLines                   []TaxLine              `json:"tax_lines,omitempty"`
+    LineItemID                 int64                  `json:"line_item_id,omitempty"`
 
 	//Deprecated: See 2022-10 release notes: https://shopify.dev/docs/api/release-notes/2022-10
 	OriginLocation *Address `json:"origin_location,omitempty"`
