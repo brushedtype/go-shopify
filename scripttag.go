@@ -32,6 +32,7 @@ type ScriptTag struct {
 	ID           int64      `json:"id"`
 	Src          string     `json:"src"`
 	DisplayScope string     `json:"display_scope"`
+	Cache        bool       `json:"cache"`
 	UpdatedAt    *time.Time `json:"updated_at"`
 }
 
